@@ -66,6 +66,6 @@ const cook = egg =>
     });
 
 getHen()
-.then(hen => getEgg(hen))
-.then(egg => cook(egg))
-.then(meal => console.log(meal));
+.then(hen => getEgg(hen)) // can be rewrite as .then(getEgg) since the value directly provided to callback funtion.
+.then(egg => cook(egg)) // .then(cook)
+.then(meal => console.log(meal)); //.then(console.log)
