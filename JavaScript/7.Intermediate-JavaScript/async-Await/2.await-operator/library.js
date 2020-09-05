@@ -22,7 +22,7 @@ this is the brainstormDinner function. It's a little silly. It returns a promise
 //   return a;
 // };
 
-const brainstormDinner0 = () => {
+const brainstormDinner = () => {
     return new Promise((resolve, reject) => {
     console.log(`I have to decide what's for dinner...`)
     setTimeout(() => {
