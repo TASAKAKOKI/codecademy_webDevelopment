@@ -1,0 +1,29 @@
+XHR POST Requests I
+    The major difference between a GET request and POST request is that a POST request requires additional information to be sent through the request. This additional information is sent in the body of the post request.
+
+    We’ll walk through the code from the diagram and construct our own POST request in the next lesson.
+        //XMLHttpRequest POST
+
+        // creates new object
+        const xhr = new XMLHttpRequest();
+        
+        const url = 'http://api-to-call.com/endpoint';
+
+        // converts data to a string
+        const data = JSON.stringify({id: '200'});
+
+
+        //handles response
+        xhr.responseType = 'json';
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                //code to execute with response
+            }
+        };
+
+        // opens request and sends object
+        xhr.open('POST', url);
+        xhr.send();
+        
+
+    We’ll construct this template from scratch in a different exercise and walk through what each step does.
